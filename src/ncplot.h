@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <curses.h>
 
-WINDOW* main_win;
+static WINDOW* main_win;
 
 void init_plotenv();
 void end_plotenv();
