@@ -2,7 +2,7 @@
 #include <curses.h>
 
 // Useful variables
-static WINDOW* main_win;
+WINDOW* main_win;
 
 // Environment setters
 void init_plotenv();
