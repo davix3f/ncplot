@@ -6,10 +6,11 @@ void init_plotenv()
 	noecho();
 	curs_set(0);
 
-	int stdscr_y, stdscr_x;
+	// Save max y and x screen values
 	getmaxyx(stdscr, stdscr_y, stdscr_x);
+	getmaxyx(main_win, max_y, max_x);
 
-//  Main window, acts like a background.
+//  Main window, acts like a general background.
 	main_win = newwin(stdscr_y, stdscr_x, 0, 0); refresh();
 	wborder(main_win, 0,0, 0,0, 0,0,0,0);
 }
