@@ -3,6 +3,8 @@
 
 // Useful variables
 WINDOW* main_win;
+int max_x, max_y;
+int stdscr_y, stdscr_x;
 
 // Environment setters
 void init_plotenv();
