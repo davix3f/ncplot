@@ -37,7 +37,7 @@ void draw_point(int point_x, int point_y)
 		|--o
 		|__|___x   */
 		
-		for(int x=(max_x/2)+1;
+		for(int x=(max_x/2);
 			point_x > 0 ? x<(max_x/2)+point_x : x>(max_x/2)+point_x;
 			// if x>0 while(x<point_x){x++} else while(x>point_x){x--}
 			point_x > 0 ? x++ : x--)
@@ -61,3 +61,10 @@ void draw_point(int point_x, int point_y)
 	}
 }
 
+void draw_point_set(coord_pair* target_pair, int size)
+{
+	for(int indx=0; indx<size; indx++)
+	{
+		draw_point(target_pair[indx].point_x, target_pair[indx].point_y);
+	}
+}

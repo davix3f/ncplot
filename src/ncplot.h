@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <curses.h>
 
+// Custom types
+typedef struct _coord_pair
+{
+    int point_x;
+    int point_y;
+} coord_pair;
+
 // Useful variables
 WINDOW* main_win;
 int max_x, max_y;
@@ -14,3 +21,4 @@ void end_plotenv();
 // Drawing functions
 void draw_axes();
 void draw_point(int point_x, int point_y);
+void draw_point_set(coord_pair* target_pair, int size);
