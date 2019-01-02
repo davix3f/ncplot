@@ -13,6 +13,10 @@ void init_plotenv()
 	main_win = newwin(stdscr_y, stdscr_x, 0, 0); refresh();
 	wborder(main_win, 0,0, 0,0, 0,0,0,0);
 	getmaxyx(main_win, max_y, max_x);
+
+
+	keypad(stdscr, TRUE);
+	cbreak();
 }
 
 void end_plotenv()
