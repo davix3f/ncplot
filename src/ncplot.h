@@ -22,3 +22,6 @@ void end_plotenv();
 void draw_axes();
 void draw_point(int point_x, int point_y);
 void draw_point_set(coord_pair* target_pair, int size);
+
+// Dialogs
+const char* new_input_dialog();
