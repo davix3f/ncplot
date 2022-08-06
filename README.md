@@ -8,7 +8,7 @@
  Also, to strengthen my ncurses skills, and I wanted to share-and-show my improvements.
  
  # I want to contribute
- Great 🤓 open a PR or [send me a Telegram message](https://t.me/pecciolino)
+ Great 🤓 open a PR
  
  # There is no code in master!
  I know, I put it in [dev branch](../../tree/master)
